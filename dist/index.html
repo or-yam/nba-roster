@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="/jquery/dist/jquery.js"></script>
-    <script src="/handlebars/"></script>
-    <title>NBA ROSTER</title>
-  </head>
 
-  <body>
-    <input id="input" type="text" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="/handlebars/dist/handlebars.js"></script>
+  <title>NBA ROSTER</title>
+</head>
+
+<body>
+  <div class="search-container">
+    <img src="https://cdn.iconscout.com/icon/free/png-512/nba-282876.png" style="width: 100px;" alt="">
+    <input id="input" type="text" placeholder="Enter a Team Name" />
     <button id="get-btn">Get Roster</button>
+  </div>
+  <div class="main-container"></div>
 
-    <script src="main.js"></script>
-  </body>
+  <script id="player-template" type="text/x-handlebars-template">
+     {{#each this}}
+     <div class="player">
+       <div class="player-img"><img src={{imgUrl}} alt="profile"></div>
+        <div class="player data">
+          <div class="player-num">{{jerseyNum}}</div>
+          <div class="player-name">{{firstName}} - {{lastName}}</div>
+          <div class="player-pos">{{pos}}</div>
+        </div>
+     </div>
+     {{/each}}
+    </script>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
-
