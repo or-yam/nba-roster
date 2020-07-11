@@ -1,22 +1,21 @@
 * {
-  margin: 0;
-  outline: none;
+  font-family: 'Alfa Slab One', cursive;
 }
 body {
-  background-color: rgb(66, 55, 100);
+  background-color: rgb(32, 32, 34);
 }
 
 .search-container {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #input {
-  width: 80%;
+  width: 60%;
   border: 3px solid #30318f;
   padding: 5px;
-  height: 20px;
+  height: 25px;
   border-radius: 5px 0 0 5px;
   outline: none;
 }
@@ -27,23 +26,76 @@ body {
   border-radius: 1em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #ffffff;
+  color: #bebebe;
   background-color: #cd1c24;
   border: solid #30318f;
   text-align: center;
   transition: all 0.2s;
+  cursor: pointer;
 }
 #get-btn:hover {
-  background-color: #4095c6;
+  background-color: #30318f;
+  border: solid #cd1c24;
 }
 
-.main-container{
-    display: flex;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.player{
-    height: 150px;
-    width: auto;
+.player {
+  border: solid #30318f;
+  background-color: rgb(34, 34, 85);
+  color: white;
+  display: grid;
+  grid-template-rows: 3fr 2fr 1fr;
+  height: auto;
+  width: 240px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.player-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileImg {
+  height: 150px;
+  width: 206px;
+  border-radius: 50%;
+}
+
+.player-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.add-btn {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #bebebe;
+  background-color: #cd1c24;
+  border: solid #30318f;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #30318f;
+  border: solid #cd1c24;
+}
+
+.stats {
+  font-size: large;
 }
