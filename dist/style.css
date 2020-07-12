@@ -1,41 +1,61 @@
 * {
   font-family: 'Alfa Slab One', cursive;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 body {
   background-color: rgb(32, 32, 34);
 }
 
+.navbar {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin: 7px;
+}
+
 .search-container {
   display: flex;
-  padding: 10px;
   align-items: center;
-  justify-content: space-around;
+  width: 100%;
 }
+
+.search-container img {
+  height: 100px;
+}
+
 #input {
-  width: 60%;
-  border: 3px solid #30318f;
-  padding: 5px;
-  height: 25px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
+  height: 100px;
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
 }
-#get-btn {
+
+.buttons-container {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn {
   display: inline-block;
   padding: 0.3em 1.2em;
-  margin: 0 0.3em 0.3em 0;
+  margin: 3px;
   border-radius: 1em;
   box-sizing: border-box;
   text-decoration: none;
-  color: #bebebe;
+  color: #fff;
   background-color: #cd1c24;
-  border: solid #30318f;
   text-align: center;
   transition: all 0.2s;
   cursor: pointer;
 }
-#get-btn:hover {
+.btn:hover {
   background-color: #30318f;
-  border: solid #cd1c24;
 }
 
 .main-container {
@@ -45,8 +65,8 @@ body {
 }
 
 .player {
-  border: solid #30318f;
-  background-color: rgb(34, 34, 85);
+  border-radius: 5px;
+  background-color: #30318f;
   color: white;
   display: grid;
   grid-template-rows: 3fr 2fr 1fr;
@@ -78,24 +98,10 @@ body {
 }
 
 .add-btn {
-  display: inline-block;
-  padding: 0.3em 1.2em;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 1em;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #bebebe;
-  background-color: #cd1c24;
-  border: solid #30318f;
-  text-align: center;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-.add-btn:hover {
-  background-color: #30318f;
-  border: solid #cd1c24;
+border: oldlace;
 }
 
+
 .stats {
-  font-size: large;
+  font-size: medium;
 }

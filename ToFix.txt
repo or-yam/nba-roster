@@ -1,7 +1,0 @@
- - Improve styles and looks
- - find better solution for broken images
- - remove players without data / image
- - change button after adding to dreamteam
- - in dream team add button to remove from list
- - fix remove from dream team
- - add option to save dream team to local storage 

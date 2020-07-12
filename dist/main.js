@@ -1,6 +1,9 @@
 const dataManager = new DataManager();
 const renderer = new Renderer();
 
+const imgError = (image) => {
+  image.src = '../assets/img/alt-player.png';
+};
 
 $('#load-btn').on('click', function () {
   let input = $('#input').val();
@@ -9,6 +12,14 @@ $('#load-btn').on('click', function () {
 
 $('#display-btn').on('click', function () {
   renderer.renderTeam(dataManager.data.currentTeam);
+});
+
+$('#loadDream-btn').on('click', function () {
+  dataManager.loadDreamTeam();
+});
+
+$('#dreamTeam-btn').on('click', function () {
+  renderer.renderTeam(dataManager.data.dreamTeam);
 });
 
 $('.main-container').on('click', '.player-img', function () {
@@ -21,18 +32,7 @@ $('.main-container').on('click', '.add-btn', function () {
   dataManager.addToDreamTeam(playerId);
 });
 
-$('#loadDream-btn').on('click', function () {
-  dataManager.loadDreamTeam();
+$('.main-container').on('click', '.rmv-btn', function () {
+  let playerId = $(this).closest('.player').attr('data-id');
+  dataManager.removeFromDreamTeam(playerId);
 });
-
-$('#dreamTeam-btn').on('click', function () {
-  renderer.renderTeam(dataManager.data.dreamTeam);
-});
-
-
-function imgError(image) {
-  image.onerror = '';
-  image.src =
-    'https://seeklogo.com/images/S/space-jam-logo-168E69A11F-seeklogo.com.jpg';
-  return true;
-}
