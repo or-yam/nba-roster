@@ -1,0 +1,107 @@
+* {
+  font-family: 'Alfa Slab One', cursive;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body {
+  background-color: rgb(32, 32, 34);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin: 7px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-container img {
+  height: 100px;
+}
+
+#input {
+  height: 100px;
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
+}
+
+.buttons-container {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 3px;
+  border-radius: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  background-color: #cd1c24;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #30318f;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.player {
+  border-radius: 5px;
+  background-color: #30318f;
+  color: white;
+  display: grid;
+  grid-template-rows: 3fr 2fr 1fr;
+  height: auto;
+  width: 240px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.player-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileImg {
+  height: 150px;
+  width: 206px;
+  border-radius: 50%;
+}
+
+.player-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.add-btn {
+border: oldlace;
+}
+
+
+.stats {
+  font-size: medium;
+}
